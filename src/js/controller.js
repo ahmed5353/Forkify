@@ -13,17 +13,6 @@ import bookmarksVeiw from './views/bookmarksVeiw.js';
 import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config.js';
 
-// console.log(icons);
-// const recipeContainer = document.querySelector('.recipe');
-
-// https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-// activiate modile.hot to stop the reloading page
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 const controlRecipe = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -84,8 +73,8 @@ const controlPagination = function (goToPage) {
 const controlServings = function (newServings) {
   // Updata the recipe servings
   model.updateServings(newServings);
+
   // Update the recipe View
-  // recipeView.render(model.state.recipe);
   recipeView.update(model.state.recipe);
 };
 
@@ -132,10 +121,6 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
   location.reload();
-
-  // upload Recipe data
-
-  // model.uploadRecipe(newRecipe);
 };
 
 const init = function () {
@@ -149,9 +134,3 @@ const init = function () {
   addRecipeView._addHandlerUpload(controlAddRecipe);
 };
 init();
-
-const happy = function () {
-  console.log('helllllo mastyer branch here!?');
-};
-// window.addEventListener('hashchange', controlRecipe);
-// window.addEventListener('load', controlRecipe);
