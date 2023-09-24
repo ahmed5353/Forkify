@@ -149,5 +149,9 @@ const init = function () {
   addRecipeView._addHandlerUpload(controlAddRecipe);
 };
 init();
+
+const happy = function () {
+  console.log('helllllo mastyer branch here!?');
+};
 // window.addEventListener('hashchange', controlRecipe);
 // window.addEventListener('load', controlRecipe);
