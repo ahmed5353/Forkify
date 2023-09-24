@@ -132,6 +132,10 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
   location.reload();
+
+  // upload Recipe data
+
+  // model.uploadRecipe(newRecipe);
 };
 
 const init = function () {
