@@ -134,9 +134,6 @@ const controlAddRecipe = async function (newRecipe) {
   location.reload();
 };
 
-const hello = function () {
-  console.log('hello, world');
-};
 const init = function () {
   bookmarksVeiw.addHandlerRender(controlBookMarks);
   recipeView.addHandlerRender(controlRecipe);
@@ -146,7 +143,6 @@ const init = function () {
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookMark(controlAddBookmarks);
   addRecipeView._addHandlerUpload(controlAddRecipe);
-  hello();
 };
 init();
 // window.addEventListener('hashchange', controlRecipe);
