@@ -132,10 +132,10 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
   location.reload();
+};
 
-  // upload Recipe data
-
-  // model.uploadRecipe(newRecipe);
+const hello = function () {
+  console.log('hello, world');
 };
 const init = function () {
   bookmarksVeiw.addHandlerRender(controlBookMarks);
@@ -146,6 +146,7 @@ const init = function () {
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookMark(controlAddBookmarks);
   addRecipeView._addHandlerUpload(controlAddRecipe);
+  hello();
 };
 init();
 // window.addEventListener('hashchange', controlRecipe);
