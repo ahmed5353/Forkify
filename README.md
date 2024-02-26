@@ -37,12 +37,6 @@ A web application that allows users to search for delicious recipes from a vast 
 ## Running the Project Locally
 Start the development server: npm start
 
-## Project Structure
-  index.html: The main entry point of the application
-  src: Contains the source code for the project
-  js: JavaScript files
-  css: CSS stylesheets
-  Configuration files (e.g., package.json, webpack.config.js, etc.)
   
 ## Contributing
 Feel free to open issues, submit pull requests, or suggest improvements.
