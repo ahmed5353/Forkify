@@ -44,9 +44,5 @@ Launch the development server with:
 npm start
 
 
-## Contributing
 
-We welcome contributions of all kinds! Whether you have ideas for new features, bug fixes, or general improvements, please feel free to open issues, submit pull requests, or share your suggestions.
-
-This project is licensed under the MIT License, so feel free to fork, modify, and share your delicious creations with the world! 🌍🍴
 
